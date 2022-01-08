@@ -1,0 +1,30 @@
+No HTML, js é inserido entre as tag's <script> e </script> exemplo:
+  <script>
+    document.getElementById("id1").innerHTML = "conteudo alterado via js";
+  </script>
+
+js funcions
+  é um bloco de código que é executado quando alguém incova, exemplo:
+  evento gerado por um click do mouse
+
+js in <head>
+
+js in <body>
+  inserir script in the bottom aumenta a velocidade do display, pois,
+  interpretação do script retarda a exibição.
+
+js external
+  é uma pratica onde o mesmo code é usado em várias web pages.
+  Para usar: <script src="file.js|url"></script>
+  Pode inserir normalmente no <head> e <body>
+  Advantages:
+    * separa code HTML do js
+    * cache of js file, can speed up page load
+  Can referenced in 2 different ways:
+    1) url
+      <script src="https://www.w3schools.com/js/myScript.js"></script>
+    2) path of file
+      <script src="file.js"></script>
+        same folder of html file
+      <script src="/folderX/folderY/file.js"></script>
+        file js is in other folder

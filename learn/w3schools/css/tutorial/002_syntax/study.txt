@@ -1,0 +1,9 @@
+Regra CSS consist of a selector and a declaration block
+  h1 {
+    color: blue;
+    font-size: 12px;
+  }
+  h1 é o selector
+  { } é a declaration block
+  color and font-size is a property
+  blue and 12px is a property value

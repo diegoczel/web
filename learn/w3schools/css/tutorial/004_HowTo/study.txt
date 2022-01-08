@@ -1,0 +1,15 @@
+3 ways to insert CSS
+  1) External
+    inside <head> tag isnert:
+    <link rel="stylesheet" href="file or url">
+  2) Internal
+    Pode ser usado, se a pagina possuir unico style.
+    incluido na tag <head> usando tag <style>
+  3) Inline
+    Used to apply a unique style for a single element.
+    Add html attribute style with css property.
+
+Order
+  1) Inline
+  2) External e Internal
+  3) browser default

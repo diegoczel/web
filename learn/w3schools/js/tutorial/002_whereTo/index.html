@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS tutorial 009 Where to</title>
+  <script>
+    function funA() {
+      document.getElementById("script-head").innerHTML = 'script inside head changed content';
+    }
+  </script>
+</head>
+<body>
+  <p id="id1"></p>
+  <script>
+    document.getElementById("id1").innerHTML = "conteudo alterado via js";
+  </script>
+
+  <p id="script-head">script inside head</p>
+  <button type="button" onclick="funA()">head</button>
+  <p id="script-body">script inside body</p>
+  <button type="button" onclick="funB()">body</button>
+
+  <script>
+    function funB() {
+      document.getElementById("script-body").innerHTML = "script inside body changed content";
+    }
+  </script>
+</body>
+</html>

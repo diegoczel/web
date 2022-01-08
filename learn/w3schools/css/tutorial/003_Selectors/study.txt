@@ -1,0 +1,12 @@
+CSS Selectors
+  Are used to find ( select ) the HTML elements you want to style.
+
+We can divide CSS Selectors into five categories:
+  1) Simple selectors
+    Based on: 
+      1.1) Tag name
+      1.2) class
+      1.3) id
+      1.4) * universal selector
+      1.5) Grouping
+        * testar se pode-se usar class, tag, id... juntos

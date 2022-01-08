@@ -1,0 +1,9 @@
+<hr>
+	used to separate content (or define a change)
+	in HTML page
+<br>
+	new line without starting a new <p>
+	
+<pre>
+	define a preformatted text.
+	preserves both spaces and new lines.
