@@ -1,0 +1,19 @@
+* {
+  background-color: #D9EEE1;
+}
+.container {
+  display: flex;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.dcs-code {
+  color: crimson;
+  background-color: #f1f1f1;
+}
