@@ -1,0 +1,31 @@
+.dcs-code {
+  background-color: #f1f1f1;
+  color: coral;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-col p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.col1 {
+  width: 50%;
+}
+
+.col2 {
+  width: 50%;
+}
+
+#rgb-fundo, #rgb-texto {
+  font-size: 200%;
+}

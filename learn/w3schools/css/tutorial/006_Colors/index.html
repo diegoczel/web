@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Colors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS Colors</h1>
+  <p>Colors are specified using: 
+    <span title="Like red, tomato, crimson">color names</span>, 
+    <span title="like rgb(255, 0, 0) for red">RGB</span>, 
+    <span title="like #FF0000 for red">HEX</span>, 
+    <span title="like hsl(0, 100%, 50%) for red">HSL</span>, 
+    <span title="like rgba(255, 0, 0, 0.5) for red with 50% of transparent">RGBA</span>, 
+    <span title="like hsl(0, 100%, 50%, 0.5) for red with 50% of transparent">HSLA</span> values
+  </p>
+
+  <h2>Color names</h2>
+  <p>CSS/HTML support <a target="_blank" href="https://www.w3schools.com/colors/colors_names.asp">140 standard color names</a>.<br>Algumas cores:
+    <span style="color: coral;">coral</span>, 
+    <span style="color: violet;">violet</span>,
+    <span style="color: tomato;">tomato</span>,
+    <span style="color: dodgerblue;">dodgerblue</span>
+  </p>
+
+  <h2>CSS <code class="dcs-code">background-color</code></h2>
+  <h2>CSS text <code class="dcs-code">color</code></h2>
+  <h2>CSS <code class="dcs-code">border</code></h2>
+  
+  <h2>CSS color values</h2>
+  <div class="container-row"> <!-- BEGIN flex row main -->
+    <div class="col1" class="container-col"> <!-- BEGIN flex column 1, rgba -->
+      <p class>rgba( 
+        <span id="span-rgb-red"></span>,
+        <span id="span-rgb-green"></span>,
+        <span id="span-rgb-blue"></span>,
+        <span id="span-rgb-trans"></span> )
+      </p>
+      <span id="rgb-fundo">fundo</span>
+      <span id="rgb-texto">texto</span>
+      <div>
+        <button id="but-rgb-red-dec" onclick="funRgbRDec()">-</button>
+        <input id="input-rgb-red" type="range" onchange="funInputRgbR()" min="0" max="255" step="1" value="0">
+        <button id="but-rgb-red-inc" onclick="funRgbRInc()">+</button>
+      </div>
+
+      <div>
+        <button id="but-rgb-green-dec" onclick="funRgbGDec()">-</button>
+        <input id="input-rgb-green" type="range" onchange="funInputRgbG()" min="0" max="255" step="1" value="0">
+        <button id="but-rgb-green-inc" onclick="funRgbGInc()">+</button>
+      </div>
+
+      <div>
+        <button id="but-rgb-blue-dec" onclick="funRgbBDec()">-</button>
+        <input id="input-rgb-blue" type="range" onchange="funInputRgbB()" min="0" max="255" step="1" value="0">
+        <button id="but-rgb-blue-inc" onclick="funRgbBInc()">+</button>
+      </div>
+
+      <div>
+        <button id="but-rgb-trans-dec" onclick="funRgbTDec()">-</button>
+        <input id="input-rgb-trans" type="range" onchange="funInputRgbT()" min="0.0" max="1.0" step="0.1" value="1.0">
+        <button id="but-rgb-trans-inc" onclick="funRgbTInc()">+</button>
+      </div>
+
+    </div> <!-- END flex column 1, rgba -->
+
+    <div class="col2" class="container-col"> <!-- BEGIN flex column 2, hsla -->
+      <p class>hsla( 
+        <span id="span-hsl-hue"></span>,
+        <span id="span-hsl-sat"></span>,
+        <span id="span-hsl-lig"></span>,
+        <span id="span-hsl-trans"></span> )
+      </p>
+      <span id="hsl-fundo">fundo</span>
+      <span id="hsl-texto">texto</span>
+      <div>
+        <button id="but-hsl-hue-dec">-</button>
+        <input id="input-hsl-hue" type="range" min="0" max="360" step="1" value="0">
+        <button id="but-hsl-hue-inc">+</button>
+      </div>
+
+      <div>
+        <button id="but-hsl-sat-dec">-</button>
+        <input id="input-hsl-sat" type="range" min="0" max="100" step="1" value="0">
+        <button id="but-hsl-sat-inc">+</button>
+      </div>
+
+      <div>
+        <button id="but-hsl-lig-dec">-</button>
+        <input id="input-hsl-lig" type="range" min="0" max="100" step="1" value="0">
+        <button id="but-hsl-lig-inc">+</button>
+      </div>
+
+      <div>
+        <button id="but-hsl-trans-dec">-</button>
+        <input id="input-hsl-trans" type="range" min="0.0" max="1.0" step="0.1" value="1.0">
+        <button id="but-hsl-trans-inc">+</button>
+      </div>
+
+    </div> <!-- END flex column 2, hsla -->
+  </div> <!-- END flex row main -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
