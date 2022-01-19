@@ -1,0 +1,48 @@
+View link in a browser
+  unvisited is underlined and blue
+  visited is underlined and purple
+  active is underlined and red
+
+target attribute
+
+title attribute
+
+absolute/relative url
+
+link in another element
+  <a href="">
+    <img src="" alt="">
+  </a>
+
+link to an email
+  <a href="mailto:someone@example.com">Send email</a>
+
+button as a link
+  <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+link css
+  :hover :active :visited :link
+
+  button as link css
+    a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover {
+    background-color: red;
+  }
+  a:active {
+    background-color: blue;
+  }
+
+link bookmark
+  * é quando direciono o fluxo a um id
+  * usar html attribute id, digamos <h2 id="c6">cap 6</h2>
+  * dai:
+    mesma pag: <a href="#c46">Jump to Cap 6</a>
+    outra pag: <a href="html_demo.html#c6">Jump to Cap 6</a>
