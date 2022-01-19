@@ -40,4 +40,5 @@ body {
   background-image: url("corner-rigth.png");
   background-repeat: no-repeat;
   background-position: right top;
+  background-attachment: scroll;
 }
