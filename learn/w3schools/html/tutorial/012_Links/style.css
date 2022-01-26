@@ -1,0 +1,29 @@
+/*.container  a:link a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container a:hover {
+  background-color: red;
+}
+.container a:active {
+  background-color: blue;
+}*/
+.container a {
+  text-decoration: none;
+  background-color: #262729;
+  color: #d0d0d0;
+  padding: 15px 25px;
+}
+.container a:hover {
+  background-color: #535355;
+}
+
+.container a:active {
+  border-radius: 10px;
+  border: 1px inset red;
+}
